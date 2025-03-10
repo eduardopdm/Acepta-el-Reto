@@ -1,19 +1,3 @@
-INDEX VERSION 1.134+C:\Users\gladi\Documents\DAMDAW_2\WS_PROGRAMAME\.metadata\.plugins\org.eclipse.jdt.core
-1237444529.index
-1067281370.index
-2492411744.index
-4072938666.index
-1049095770.index
-2677339089.index
+INDEX VERSION 1.134+C:\Users\Vespertino\Documents\Acepta-el-Reto\WS_PROGRAMAME\.metadata\.plugins\org.eclipse.jdt.core
 1865797976.index
-1528987212.index
-2534388273.index
-2885887971.index
-2962679491.index
-737796699.index
-2034345408.index
 3067260843.index
-945069488.index
-1922394880.index
-2892942309.index
-176712657.index
