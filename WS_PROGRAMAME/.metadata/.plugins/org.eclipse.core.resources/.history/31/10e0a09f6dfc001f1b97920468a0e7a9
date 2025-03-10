@@ -1,0 +1,14 @@
+package ej528multiplicacion;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class MultiplicacionTest {
+
+	@Test
+	void testComprobarParejas() {
+		fail("Not yet implemented");
+	}
+
+}

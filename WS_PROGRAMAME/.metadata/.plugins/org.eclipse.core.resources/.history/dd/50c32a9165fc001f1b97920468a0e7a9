@@ -1,0 +1,72 @@
+package ej688escalerasw;
+
+import java.util.Scanner;
+
+public class Escaleras688 {
+
+	static Scanner sc = new Scanner(System.in);
+
+	public static void main(String[] args) {
+
+		while (true) {
+
+//			String[] primera = sc.nextLine().split(" ");
+//
+//			int c = Integer.parseInt(primera[0]);
+//
+//			int m = Integer.parseInt(primera[1]);
+//
+//			int n = Integer.parseInt(primera[2]);
+//
+//			int[] alturas = new int[n + 1];
+//
+//			String[] segunda = sc.nextLine().split(" ");
+//
+//			for (int i = 0; i < alturas.length; i++) {
+//				alturas[i] = Integer.parseInt(segunda[i]);
+//			}
+
+			int c = sc.nextInt();
+
+			int m = sc.nextInt();
+
+			int n = sc.nextInt();
+			
+			sc.nextLine();
+
+			int[] alturas = new int[n + 1];
+
+			for (int i = 0; i < alturas.length; i++) {
+				alturas[i] = sc.nextInt();
+			}
+			
+			sc.nextLine();
+
+			if (comprobarEscaleras(c, m, alturas))
+				System.out.println("Ok");
+			else
+				System.out.println("Tropiezo");
+		}
+
+	}
+
+	static boolean comprobarEscaleras(int c, int m, int[] alturas) {
+
+		int primero = alturas[1] - alturas[0];
+
+		int ultimo = primero;
+
+		for (int i = 2; i < alturas.length; i++) {
+
+			int nuevo = alturas[i] - alturas[i - 1];
+
+			if (Math.abs(nuevo - ultimo) > c || Math.abs(nuevo - primero) > m)
+				return false;
+
+			ultimo = nuevo;
+		}
+
+		return true;
+	}
+
+}

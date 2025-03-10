@@ -1,0 +1,112 @@
+package ej528multiplicacion;
+
+import java.util.Scanner;
+
+public class Multiplicacion {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		int numero;
+		while (true) {
+			numero = Integer.parseInt(sc.nextLine());
+
+			if (numero == 0) {
+				break;
+			}
+
+			double[] array = new double[numero];
+
+			for (int i = 0; i < numero; i++) {
+
+				array[i] = Double.parseDouble(numeros[i]);
+
+			}
+
+//			for (int i = 0; i < numero; i++) {
+//				array[i] = sc.nextDouble(); // Directamente convertir el número en double
+//			}
+
+//			System.out.println(comprobarParejas(array));
+		}
+
+	}
+
+	static int comprobarParejas(double[] numeros) {
+
+		int menor1 = 0;
+		int mayor1 = 0;
+
+		for (double numero : numeros) {
+
+			if (0 < numero && numero < 1)
+				menor1++;
+
+			if (numero > 1)
+				mayor1++;
+		}
+
+		int n = numeros.length * (numeros.length - 1) / 2 - menor1 * mayor1;
+
+		return n;
+	}
+
+//	static int comprobarParejas(double[] numeros) {
+//		int n = 0;
+//
+//		int mayorIgual1 = 0;
+//		int menorIgual1 = 0; // No 0
+//		int igual0 = 0;
+//		int igual1 = 0;
+//
+//		for (double numero : numeros) {
+//			if (numero == 0) {
+//
+//				igual0++;
+//
+//			} else {
+//
+//				if (numero == 1)
+//					igual1++;
+//
+//				if (numero >= 1)
+//					mayorIgual1++;
+//
+//				if (numero <= 1)
+//					menorIgual1++;
+//			}
+//		}
+//
+//		n += igual0 * (numeros.length - igual0);
+//
+//		n += mayorIgual1 * (mayorIgual1 - 1) / 2;
+//
+//		n += menorIgual1 * (menorIgual1 - 1) / 2;
+//
+//		n -= igual1 * (igual1 - 1) / 2;
+//
+//		return n;
+//	}
+
+//	static int comprobarParejas(double[] numeros) {
+//		int n = 0;
+//
+//		for (int i = 0; i < numeros.length; i++) {
+//
+//			double ni = numeros[i];
+//
+//			for (int j = i + 1; j < numeros.length; j++) {
+//
+//				double nj = numeros[j];
+//
+//				if ((ni == 0 || nj == 0 || ni >= 1 && nj >= 1) || (ni <= 1 && nj <= 1)) {
+////					System.out.println("BIEN: " + numeros[i] + " x " + numeros[j] + " = " + numeros[i] * numeros[j]);
+//					n++;
+//				}
+//			}
+//
+//		}
+//		return n;
+//	}
+}

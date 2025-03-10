@@ -1,0 +1,14 @@
+package ej688escalerasw;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class EscalerasTest {
+
+	@Test
+	void test1() {
+		fail("Not yet implemented");
+	}
+
+}

@@ -1,0 +1,15 @@
+package ej732granja;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class GranjaTest {
+
+	@Test
+	void testCalcularPuertas() {
+
+		assertTrue(GranjaPeano.calcularPuertas(new int[] { 0, 2 }, new int[] { 2, 2 }));
+	}
+
+}

@@ -1,0 +1,47 @@
+package ej688escalerasw;
+
+import java.util.Scanner;
+
+public class Escaleras688 {
+
+	static Scanner sc = new Scanner(System.in);
+
+//	static Scanner sc = new Scanner("1 10 4\r\n" + "100 120 141 161 180");
+
+	public static void main(String[] args) {
+
+		// WHILE TRUE
+
+		int c = sc.nextInt();
+
+		int m = sc.nextInt();
+
+		int[] alturas = new int[sc.nextInt() + 1];
+
+		if (comprobarEscaleras(c, m, alturas))
+			System.out.println("Ok");
+		else
+			System.out.println("Tropiezo");
+
+	}
+
+	static boolean comprobarEscaleras(int c, int m, int[] alturas) {
+
+		int primero = alturas[1] - alturas[0];
+
+		int ultimo = primero;
+
+		for (int i = 2; i < alturas.length; i++) {
+
+			int nuevo = alturas[i] - alturas[i - 1];
+
+			if (Math.abs(nuevo - ultimo) > c || Math.abs(nuevo - primero) > m)
+				return false;
+
+			ultimo = nuevo;
+		}
+
+		return true;
+	}
+
+}

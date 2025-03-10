@@ -1,0 +1,19 @@
+package ej688escalerasw;
+
+public class Escaleras688 {
+
+	public static void main(String[] args) {
+
+	}
+
+	public boolean comprobarEscaleras(int[] contra) {
+
+		for (int i = 1; i < contra.length; i++) {
+
+			
+		}
+
+		return false;
+	}
+
+}

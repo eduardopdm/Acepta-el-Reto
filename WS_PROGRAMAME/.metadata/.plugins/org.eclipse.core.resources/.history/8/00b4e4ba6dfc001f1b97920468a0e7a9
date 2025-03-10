@@ -1,0 +1,15 @@
+package ej528multiplicacion;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class MultiplicacionTest {
+
+	@Test
+	void testComprobarParejas() {
+
+		assertTrue(Multiplicacion.comprobarParejas(new double[] { 4, 5, 6, 7 }) == 6);
+	}
+
+}

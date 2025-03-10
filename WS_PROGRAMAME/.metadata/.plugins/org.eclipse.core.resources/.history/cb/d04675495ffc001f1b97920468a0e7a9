@@ -1,0 +1,23 @@
+package ej688escalerasw;
+
+public class Escaleras688 {
+
+	public static void main(String[] args) {
+
+	}
+
+	public boolean comprobarEscaleras(int[] alturas) {
+
+		int ultimo = alturas[1] - alturas[0];
+
+		for (int i = 2; i < alturas.length; i++) {
+			
+			
+
+			ultimo = alturas[i] - alturas[i - 1];
+		}
+
+		return true;
+	}
+
+}
