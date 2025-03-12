@@ -1,0 +1,40 @@
+package ej367repartiendoRegalos;
+
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.Set;
+
+public class RepartiendoRegalos {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		int n = sc.nextInt();
+
+		while (n-- > 0) {
+
+		}
+	}
+//	Map<Integer, Boolean> portales
+
+	static void repartirRegalos(int ini, List<Integer> portales) {
+
+	}
+
+	static int siguientePortal(int ini, List<Integer> portales) {
+
+		int distancia = Math.abs(ini - portales.get(0));
+
+		for (int i = 1; i < portales.size(); i++) {
+
+			int nDistancia = Math.abs(ini - portales.get(i));
+
+			if (nDistancia > distancia)
+				return i - 1;
+		}
+		return portales.size() - 1;
+	}
+
+}

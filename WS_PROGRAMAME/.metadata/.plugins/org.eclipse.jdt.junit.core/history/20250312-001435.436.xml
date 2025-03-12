@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RepartiendoRegalosTest" project="Programame" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="ej367repartiendoRegalos.RepartiendoRegalosTest" time="0.001" displayname="RepartiendoRegalosTest" uniqueid="[engine:junit-jupiter]/[class:ej367repartiendoRegalos.RepartiendoRegalosTest]">
+    <testcase name="testRepartirRegalos1" classname="ej367repartiendoRegalos.RepartiendoRegalosTest" time="0.0" displayname="testRepartirRegalos1()" uniqueid="[engine:junit-jupiter]/[class:ej367repartiendoRegalos.RepartiendoRegalosTest]/[method:testRepartirRegalos1()]"/>
+    <testcase name="testRepartirRegalos2" classname="ej367repartiendoRegalos.RepartiendoRegalosTest" time="0.0" displayname="testRepartirRegalos2()" uniqueid="[engine:junit-jupiter]/[class:ej367repartiendoRegalos.RepartiendoRegalosTest]/[method:testRepartirRegalos2()]"/>
+    <testcase name="testRepartirRegalos3" classname="ej367repartiendoRegalos.RepartiendoRegalosTest" time="0.0" displayname="testRepartirRegalos3()" uniqueid="[engine:junit-jupiter]/[class:ej367repartiendoRegalos.RepartiendoRegalosTest]/[method:testRepartirRegalos3()]"/>
+  </testsuite>
+</testrun>

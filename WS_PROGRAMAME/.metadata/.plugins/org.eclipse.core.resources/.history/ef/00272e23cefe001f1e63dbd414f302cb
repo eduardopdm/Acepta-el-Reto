@@ -1,0 +1,14 @@
+package ej367repartiendoRegalos;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class RepartiendoRegalosTest {
+
+	@Test
+	void testRepartirRegalos() {
+		fail("Not yet implemented");
+	}
+
+}
