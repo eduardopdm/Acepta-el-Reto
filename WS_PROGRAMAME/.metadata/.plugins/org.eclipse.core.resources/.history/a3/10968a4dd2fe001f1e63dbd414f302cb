@@ -1,0 +1,52 @@
+package ej367repartiendoRegalos;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.jupiter.api.Test;
+
+class RepartiendoRegalosTest {
+
+	@Test
+	void testRepartirRegalos1() {
+
+		System.out.println("TEST 1");
+
+		List<Integer> portales = new ArrayList<Integer>(List.of(2, 4));
+
+		RepartiendoRegalos.repartirRegalos(0, portales);
+	}
+
+	@Test
+	void testRepartirRegalos2() {
+
+		System.out.println("TEST 2");
+
+		List<Integer> portales = new ArrayList<Integer>(List.of(2, 5, 1));
+
+		RepartiendoRegalos.repartirRegalos(3, portales);
+	}
+
+	@Test
+	void testRepartirRegalos3() {
+
+		System.out.println("TEST 3");
+
+		List<Integer> portales = new ArrayList<Integer>(List.of(2, 4, 7));
+
+		RepartiendoRegalos.repartirRegalos(3, portales);
+	}
+
+	@Test
+	void testRepartirRegalos4() {
+
+		System.out.println("TEST 3");
+
+		List<Integer> portales = new ArrayList<Integer>(List.of(1, 2, 3, 4, 5, 6, 7));
+
+		RepartiendoRegalos.repartirRegalos(7, portales);
+	}
+
+}

@@ -1,0 +1,23 @@
+package ej367repartiendoRegalos;
+
+import java.util.Map;
+import java.util.Scanner;
+
+public class RepartiendoRegalos {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		int n = sc.nextInt();
+
+		while (n-- > 0) {
+
+		}
+	}
+
+	public void repartirRegalos(int ini, Map<Integer, Boolean> portales) {
+
+	}
+
+}
